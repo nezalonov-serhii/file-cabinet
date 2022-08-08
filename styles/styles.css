@@ -1,0 +1,66 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+    /* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header>div>a {
+    margin: 24px 0 25px 215px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-conteiner {
+    display: flex;
+}
+
+header>div>a>span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #2196F3;
+}
+
+.navigation {
+     display: flex;
+     margin: 32px 0 32px 93px;
+     list-style: none;  
+}
+
+.navigation>a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #212121;
+}
+
+.navigation>a:not(:last-child, :first-child) {
+    margin: 0 50px;
+}   
+
+.contact-list {
+    display: flex;
+    list-style: none;
+    margin: 32px 215px 0 344px;
+}
+
+.contact-list-item>a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #757575;  
+}
+.contact-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* hero */
+

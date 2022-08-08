@@ -218,6 +218,7 @@ h1 {
 .footer-list {
     text-decoration: none;
     list-style: none;
+    margin-top: 20px;
 }
 
 .footer-list>li>p{

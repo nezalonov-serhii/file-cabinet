@@ -6,6 +6,7 @@
 цвет вторичного текста #757575
 цвет контактних даних в футере rgba(255, 255, 255, 0.6);
 цвет фокуса и кнопок #2196F3;
+цвет кнопки фильтров #F5F4FA;
 
 */ 
 
@@ -17,18 +18,33 @@
     --prime-text-color: #757575;
     --address-text-color: rgba(255, 255, 255, 0.6);
     --focus-color: #2196F3;
+    --bg-filters: #F5F4FA;
 }
 
 body {
     color: var(--prime-text-color);
-    background-color: grey;
 }
 
 .list-nav,
 .lists-about,
 .lists-features,
-.lists-work {
+.lists-work,
+.list-filters,
+.project-list {
     list-style: none;
+}
+
+.focus:focus, .focus:hover{
+    color: var(--focus-color);
+}
+
+.focus-filters:focus, .focus-filters:hover {
+    background-color: var(--focus-color);
+    color: var(--whitecolor);
+}
+
+.navigation .active-page {
+    color: var(--focus-color);
 }
 
 /* header */
@@ -60,6 +76,12 @@ body {
 .button {
     background-color: var(--focus-color);
     color: var(--whitecolor);
+    cursor: pointer;
+}
+
+.button-filters {
+    color: var(--secondary-text-color);
+    background-color: var(--bg-filters);
 }
 
 /* Features */

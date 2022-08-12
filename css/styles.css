@@ -5,6 +5,7 @@
 цвет загаловков #212121
 цвет вторичного текста #757575
 цвет контактних даних в футере rgba(255, 255, 255, 0.6);
+цвет фокуса и кнопок #2196F3;
 
 */ 
 
@@ -12,9 +13,74 @@
     --whitecolor: #ffffff;
     --blackcolor: #000000;
     --background-second: #2F303A;
-    --prime-text-color: #212121;
-    --secondary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --prime-text-color: #757575;
     --address-text-color: rgba(255, 255, 255, 0.6);
+    --focus-color: #2196F3;
+}
+
+body {
+    color: var(--prime-text-color);
+    background-color: grey;
+}
+
+.list-nav,
+.lists-about,
+.lists-features,
+.lists-work {
+    list-style: none;
 }
 
 /* header */
+
+.titel {
+    color: var(--secondary-text-color);
+}
+
+.navigation .logo {
+    color: var(--blackcolor);
+}
+
+.logo span {
+    color: var(--focus-color);
+}
+
+
+
+.contact-link {
+    color: inherit;;
+}
+
+/* Hero */
+
+.section-hero h1 {
+    color: var(--whitecolor);
+}
+
+.button {
+    background-color: var(--focus-color);
+    color: var(--whitecolor);
+}
+
+/* Features */
+
+.titel {
+    color: #212121;
+}
+
+/* Aboute work */
+
+/* Aboute team */
+
+/* Footer */
+.footer .logo {
+    color: var(--whitecolor);
+}
+
+.footer-contacts {
+    color: var(--whitecolor);
+}
+
+.footer-contacts a {
+    color: var(--address-text-color);
+}

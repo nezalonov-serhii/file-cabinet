@@ -8,6 +8,10 @@
 цвет фокуса и кнопок #2196F3;
 цвет кнопки фильтров #F5F4FA;
 
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
 */ 
 
 :root {
@@ -22,16 +26,33 @@
 }
 
 body {
+    background-color: var(--whitecolor);
     color: var(--prime-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
 }
 
-.list-nav,
-.lists-about,
-.lists-features,
-.lists-work,
-.list-filters,
-.project-list {
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.lists{
     list-style: none;
+}
+
+.litter-small {
+    letter-spacing: 0.02em;
+}
+
+.litter-midlle {
+    letter-spacing: 0.03em;
+}
+
+.litter-large {
+    letter-spacing: 0.06em;
 }
 
 .focus:focus, .focus:hover{
@@ -47,14 +68,32 @@ body {
     color: var(--focus-color);
 }
 
+
 /* header */
 
 .titel {
     color: var(--secondary-text-color);
+
 }
+
+
+
+.work-lists {
+    line-height: 1.71;
+}
+
+.work-lists h3 {
+    font-weight: 700;
+    line-height: 1.14;
+}
+
 
 .navigation .logo {
     color: var(--blackcolor);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .logo span {
@@ -64,24 +103,25 @@ body {
 
 
 .contact-link {
-    color: inherit;;
+    color: inherit;
 }
 
 /* Hero */
 
 .section-hero h1 {
     color: var(--whitecolor);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
 }
 
 .button {
     background-color: var(--focus-color);
     color: var(--whitecolor);
     cursor: pointer;
-}
-
-.button-filters {
-    color: var(--secondary-text-color);
-    background-color: var(--bg-filters);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* Features */
@@ -93,16 +133,52 @@ body {
 /* Aboute work */
 
 /* Aboute team */
+.cards p {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.cards .titel {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
 
 /* Footer */
 .footer .logo {
     color: var(--whitecolor);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .footer-contacts {
     color: var(--whitecolor);
+    line-height: 1.71;
 }
 
 .footer-contacts a {
     color: var(--address-text-color);
+}
+
+/* Portfolio */
+.button-filters {
+    color: var(--secondary-text-color);
+    background-color: var(--bg-filters);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+}
+
+.lists-filters .titel {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.lists-filters p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }

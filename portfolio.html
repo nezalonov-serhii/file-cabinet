@@ -16,115 +16,155 @@
 <body>
 
     <!-- Шапка -->
-    <header>
-        <nav class="navigation">
-            <a href="/" class="logo "><span>Web</span>Studio</a>
-            <a href="./index.html" class="titel focus">Студія</a>
-            <a href="./portfolio.html" class="titel focus active-page">Портфоліо</a>
-            <a href="/" class="titel focus">Контакти</a>
-        </nav>
-        <ul class="lists">
-            <li><a href="mailto:info@devstudio.com" class="contact-link active-focus">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact-link active-focus">+38 096 111 11 11</a></li>
-        </ul>
+    <header class="head">
+        <div class="container">
+            <nav class="navigation">
+                <a href="/" class="logo "><span>Web</span>Studio</a>
+                <a href="./index.html" class="titel focus litter-small">Студія</a>
+                <a href="./portfolio.html" class="titel focus litter-small active-page">Портфоліо</a>
+                <a href="/" class="titel focus litter-small">Контакти</a>
+            </nav>
+            <ul class="lists contact-items">
+                <li><a href="mailto:info@devstudio.com" class="contact-link focus litter-small">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="contact-link focus litter-small">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h1>Портфоліо</h1>
-            <ul class="lists">
-                <li>
-                    <button class="button-filters focus-filters litter-midlle">Усі</button>
-                </li>
-
-                <li>
-                    <button class="button-filters focus-filters litter-midlle">Веб-сайти</button>
-                </li>
-
-                <li>
-                    <button class="button-filters focus-filters litter-midlle">Додатки</button>
-                </li>
-
-                <li>
-                    <button class="button-filters focus-filters litter-midlle">Дизайн</button>
-                </li>
-
-                <li>
-                    <button class="button-filters focus-filters litter-midlle">Маркетинг</button>
-                </li>
-            </ul>
-
-            <ul class="lists lists-filters">
-                <li>
-                    <img src="./img/project1.jpg" alt="Відкритий сайт на ноутбуку" width="370" height="294">
-                    <h2 class="titel litter-large">Технокряк</h2>
-                    <p>Веб-сайт</p>              
-                </li>
-
-                <li>             
-                    <img src="./img/project2.jpg" alt="Постер команди із баскедболу" width="370" height="294">
-                    <h2 class="titel litter-large">Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>            
-                </li>
-
-                <li>  
-                    <img src="./img/project3.jpg" alt="логотип ресторана" width="370" height="294">
-                    <h2 class="titel litter-large">Ресторан Seafood</h2>
-                    <p>Додаток</p>
-                </li>
-
-                <li>
-                    <img src="./img/project4.jpg" alt="навушники" width="370" height="294">
-                    <h2 class="titel litter-large">Проєкт Prime</h2>
-                    <p>Маркетинг</p>
-                </li>
-
-                <li>
-                    <img src="./img/project5.jpg" alt="дві коробки" width="370" height="294">
-                    <h2 class="titel litter-large">Проєкт Boxes</h2>
-                    <p>Додаток</p>
-                </li>
-
-                <li>
-                    <img src="./img/project6.jpg" alt="фото сайта" width="370" height="294">
-                    <h2 class="titel litter-large">Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>     
-                </li>
-
-                <li>    
-                    <img src="./img/project7.jpg" alt="книга леметированной версії" width="370" height="294">
-                    <h2 class="titel litter-large">Видання Limited Edition</h2>
-                    <p>Дизайн</p>
-                </li>
-
-                <li>  
-                    <img src="./img/project8.jpg" alt="Бирка з написом" width="370" height="294">
-                    <h2 class="titel litter-large">Проєкт LAB</h2>
-                    <p>Маркетинг</p>
-                </li>
-
-                <li>
-                    <img src="./img/project9.jpg" alt="Фото додатка" width="370" height="294">
-                    <h2 class="titel litter-large">Growing Business</h2>
-                    <p>Додаток</p>
-                </li>
-            </ul>
+        <section class="portfolio">
+            <div class="container">
+                <!-- <h1>Портфоліо</h1> -->
+                <ul class="lists filters-lists">
+                    <li>
+                        <button class="button-filters focus-filters litter-midlle">Усі</button>
+                    </li>
+                
+                    <li>
+                        <button class="button-filters focus-filters litter-midlle">Веб-сайти</button>
+                    </li>
+                
+                    <li>
+                        <button class="button-filters focus-filters litter-midlle">Додатки</button>
+                    </li>
+                
+                    <li>
+                        <button class="button-filters focus-filters litter-midlle">Дизайн</button>
+                    </li>
+                
+                    <li>
+                        <button class="button-filters focus-filters litter-midlle">Маркетинг</button>
+                    </li>
+                </ul>
+                
+                <ul class="lists lists-portfolio ">
+                    <li>
+                        <a href="/">
+                            <img src="./img/project1.jpg" alt="Відкритий сайт на ноутбуку" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Технокряк</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                       <a href="/">
+                        <img src="./img/project2.jpg" alt="Постер команди із баскедболу" width="370" height="294">
+                        <div class="wraper-porfolio">
+                            <h2 class="titel litter-large">Постер New Orlean vs Golden Star</h2>
+                            <p>Дизайн</p>
+                        </div>
+                       </a>
+                    </li>
+                
+                    <li>
+                        <a href="/">
+                            <img src="./img/project3.jpg" alt="логотип ресторана" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Ресторан Seafood</h2>
+                                <p>Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/">
+                            <img src="./img/project4.jpg" alt="навушники" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Проєкт Prime</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/">
+                            <img src="./img/project5.jpg" alt="дві коробки" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Проєкт Boxes</h2>
+                                <p>Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/">
+                            <img src="./img/project6.jpg" alt="фото сайта" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Inspiration has no Borders</h2>
+                                <p>Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/">
+                            <img src="./img/project7.jpg" alt="книга леметированной версії" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Видання Limited Edition</h2>
+                                <p>Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/">
+                            <img src="./img/project8.jpg" alt="Бирка з написом" width="370" height="294">
+                            <div class="wraper-porfolio">
+                                <h2 class="titel litter-large">Проєкт LAB</h2>
+                                <p>Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                
+                    <li>
+                       <a href="/">
+                        <img src="./img/project9.jpg" alt="Фото додатка" width="370" height="294">
+                        <div class="wraper-porfolio">
+                            <h2 class="titel litter-large">Growing Business</h2>
+                            <p>Додаток</p>
+                        </div>
+                       </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
     <!-- Футер -->
     <footer class="footer">
-
-        <a href="/" class="logo"><span>Web</span>Studio</a>
-
-        <address class="footer-contacts">
-            <p>м. Київ, пр-т Лесі Українки, 26</p>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tell:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div class="container">
+            <a href="/" class="logo"><span>Web</span>Studio</a>
+    
+            <address class="footer-contacts">
+                <p>м. Київ, пр-т Лесі Українки, 26</p>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a href="tell:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </div>
     </footer>
-
 
 </body>
 

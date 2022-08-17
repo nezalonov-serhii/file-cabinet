@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,17 +17,19 @@
 <body>
 
     <!-- Шапка -->
-    <header>
-        <nav class="navigation">
-            <a href="/" class="logo "><span>Web</span>Studio</a>
-            <a href="./index.html" class="titel focus active-page litter-small">Студія</a>
-            <a href="./portfolio.html" class="titel focus litter-small">Портфоліо</a>
-            <a href="/" class="titel focus litter-small">Контакти</a>
-        </nav>
-        <ul class="lists">
-            <li ><a href="mailto:info@devstudio.com" class="contact-link focus litter-small" >info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact-link focus litter-small">+38 096 111 11 11</a></li>
-        </ul>
+    <header class="head">
+        <div class="container">
+            <nav class="navigation">
+                <a href="/" class="logo "><span>Web</span>Studio</a>
+                <a href="./index.html" class="titel focus active-page litter-small">Студія</a>
+                <a href="./portfolio.html" class="titel focus litter-small">Портфоліо</a>
+                <a href="/" class="titel focus litter-small">Контакти</a>
+            </nav>
+            <ul class="lists contact-items">
+                <li ><a href="mailto:info@devstudio.com" class="contact-link focus litter-small" >info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="contact-link focus litter-small">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
@@ -39,94 +42,106 @@
 
         <!-- Особливості -->
         <Section>
+            <div class="container features">
+                <!-- <h2>Особливості</h2> -->
+                <ul class="lists work-lists">
+                    <li>
+                        <h3 class="titel">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                    </li>
 
-            <!-- <h2>Особливості</h2> -->
+                    <li>
+                        <h3 class="titel">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
 
-            <ul class="lists work-lists">
-                <li>
-                    <h3 class="titel">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
+                    <li>
+                        <h3 class="titel">ПЛАНУВАННЯ</h3>
+                        <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
 
-                <li>
-                    <h3 class="titel">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-
-                <li>
-                    <h3 class="titel">ПЛАНУВАННЯ</h3>
-                    <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-
-                <li>
-                    <h3 class="titel">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
+                    <li>
+                        <h3 class="titel">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+            </div>
         </Section>
 
         <!-- Чим ми займаємося -->
         <Section>
-            <h2 class="titel ">Чим ми займаємося</h2>
-            <ul class="lists">
-                <li>
-                    <img src="./img/keyboard.jpg" alt="Друкує на клавіатурі" width="370" height="294">
-                </li>
+            <div class="container aboute">
+                <h2 class="titel ">Чим ми займаємося</h2>
+                <ul class="lists aboute-lists">
+                    <li>
+                        <img src="./img/keyboard.jpg" alt="Друкує на клавіатурі" width="370" height="294">
+                    </li>
 
-                <li>
-                    <img src="./img/themes-for-moodle.jpg" alt="обирае теми для телефона" width="370" height="294">
-                </li>
+                    <li>
+                        <img src="./img/themes-for-moodle.jpg" alt="обирае теми для телефона" width="370" height="294">
+                    </li>
 
-                <li>
-                    <img src="./img/rgb-color.jpg" alt="обирае колір у РГБ палітрі" width="370" height="294">
-                </li>
-            </ul>
+                    <li>
+                        <img src="./img/rgb-color.jpg" alt="обирае колір у РГБ палітрі" width="370" height="294">
+                    </li>
+                </ul>
+            </div>
         </Section>
 
         <!-- Про команду -->
-        <section>
+        <section class="about-team">
+            <div class="container "> 
+                <h2 class="titel titel-team">Наша команда</h2>
 
-            <h2 class="titel">Наша команда</h2>
+                <ul class="lists cards">
+                    <li>
+                        <img src="./img/photo1.jpg" alt="фото члена команди" width="270" height="260">
+                        <div class="container-description">
+                            <p class="titel">Ігор Дем'яненко</p>
+                            <p>Product Designer</p>
+                        </div>
+                    </li>
 
-            <ul class="lists cards">
-                <li>
-                    <img src="./img/photo1.jpg" alt="фото члена команди" width="270" height="260">
-                    <p class="titel">Ігор Дем'яненко</p>
-                    <p>Product Designer</p>
-                </li>
+                    <li>
+                        <img src="./img/photo2.jpg" alt="фото члена команди" width="270" height="260">
+                        <div class="container-description">
+                            <p class="titel">Ольга Рєпіна</p>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <img src="./img/photo2.jpg" alt="фото члена команди" width="270" height="260">
-                    <p class="titel">Ольга Рєпіна</p>
-                    <p>Frontend Developer</p>
-                </li>
+                    <li>
+                        <img src="./img/photo3.jpg" alt="фото члена команди" width="270" height="260">
+                        <div class="container-description">
+                            <p class="titel">Микола Тарасов</p>
+                            <p>Marketing</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <img src="./img/photo3.jpg" alt="фото члена команди" width="270" height="260">
-                    <p class="titel">Микола Тарасов</p>
-                    <p>Marketing</p>
-                </li>
-
-                <li>
-                    <img src="./img/photo4.jpg" alt="фото члена команди" width="270" height="260">
-                    <p class="titel">Михайло Єрмаков</p>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
+                    <li>
+                        <img src="./img/photo4.jpg" alt="фото члена команди" width="270" height="260">
+                        <div class="container-description">
+                            <p class="titel">Михайло Єрмаков</p>
+                            <p>UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
     <!-- Футер -->
     <footer class="footer">
-
-        <a href="/" class="logo"><span>Web</span>Studio</a>
-
-        <address class="footer-contacts">
-            <p>м. Київ, пр-т Лесі Українки, 26</p>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tell:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div class="container">
+            <a href="/" class="logo"><span>Web</span>Studio</a>
+            
+            <address class="footer-contacts">
+                <p>м. Київ, пр-т Лесі Українки, 26</p>     
+                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a href="tell:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </div>
     </footer>
 
 

@@ -1,0 +1,55 @@
+/* 
+цвет лого в хедере #000000
+цвет лого в футере, адреса, Героя и фона html #ffffff
+цвет вторичного фона #2F303A;
+цвет загаловков #212121
+цвет главний цвет #757575
+цвет контактних даних в футере rgba(255, 255, 255, 0.6);
+цвет фокуса и кнопок #2196F3;
+цвет кнопки фильтров #F5F4FA;
+
+font-family: 'Raleway',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+*/ 
+
+:root {
+    --prime-color: #757575;
+    --second-color: #212121;
+    --acent-color: #2196F3;
+    --bg-color: #ffffff;
+    --second-bg-color: #2F303A;
+    --bleak-color: #000000;
+    --contact-foter: rgba(255, 255, 255, 0.6);
+    --filter-buton-bg: #F5F4FA;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    color: #757575;
+
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.navigation>a {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+
+.lists-header a {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: inherit;
+}

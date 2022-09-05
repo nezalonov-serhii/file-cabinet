@@ -1,216 +1,121 @@
-/* 
-цвет лого в хедере #000000
-цвет лого в футере, адреса, Героя и фона html #ffffff
-цвет вторичного фона #2F303A;
-цвет загаловков #212121
-цвет главний цвет #757575
-цвет контактних даних в футере rgba(255, 255, 255, 0.6);
-цвет фокуса и кнопок #2196F3;
-цвет кнопки фильтров #F5F4FA;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
-font-family: 'Raleway',
-sans-serif;
-font-family: 'Roboto',
-sans-serif;
-*/ 
-
-:root {
-    --prime-color: #757575;
-    --second-color: #212121;
-    --acent-color: #2196F3;
-    --bg-color: #ffffff;
-    --second-bg-color: #2F303A;
-    --bleak-color: #000000;
-    --contact-foter: rgba(255, 255, 255, 0.6);
-    --filter-buton-bg: #F5F4FA;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-    color: #757575;
-
-    background-color: #eee;
-}
-
-h1,h2,h3,h4,h5,h6 {
     margin: 0;
-    padding: 0;
+    background-color: rgb(116, 116, 116);
 }
 
 ul {
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-li {
-    list-style: none;
+/* header */
+.header-bgk {
+    background-color: darkslategray;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .container {
-    width: 1200px;
     margin: 0 auto;
-    background-color: teal;
-    padding-left: 215px;
-    padding-right: 215px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
-.container.header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+.lists-nav {
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.container.footer {
-        padding-top: 60px;
-        padding-bottom: 57px;
-}
-
-
-/* header */
-.navigation .logo {
-    color: var(--bleak-color);
-    margin-right: 93px;
-
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
-.navigation a:not(:last-child) {
-    margin-right: 50px;
-}
-
-.logo span {
-    color: var(--acent-color);
-}
-
-.navigation a {
-    text-decoration: none;
-    color: var(--second-color);
-
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.lists-header{
-    display: flex;
-    margin-left: auto;
-}
-
-.lists-header a {
-    color: inherit;
-    text-decoration: none;
-
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.lists-header li:not(:last-child){
-    margin-right: 50px;
-}
-
-/* Hero */
-.hero-titel {
-    color:  var(--bg-color);
-    text-align: center;
-    max-width: 696px;
+    flex-wrap: wrap;
+    max-width: 100%;
     margin: auto;
+}
+
+.list-item {
+    width: 260px;
+    padding: 15px 20px;
+    margin-right: 30px;
+    background-color: aliceblue;
+}
+
+.list-item {
     margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 2px rgba(0, 0, 0, 0.5),
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
 
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-}
-
-.btn {
-    color: var(--bg-color);
-    background-color: var(--acent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    border-radius: 4px;
-    padding: 10px 32px;
-    display: block;
-    margin: auto;
-
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-}
-
-/* about work */
-.lists-work {
-
-}
-
-.titel-work {
-    color: var(--second-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-/* about team */
-.titel {
-    color: var(--second-color);
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
+    font-size: 30px;
+
+    
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-delay: 0;
 }
 
-.list-team .titel-card {
-    color: var(--second-color);
-
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+.list-item:hover {
+    transform: scale(1.2) translate(0,0);
 }
 
-.list-team {
-    font-size: 16px;
-    line-height: 1.19;
-}
 
-/* foter */
-.container .logo {
-    color: var(--bleak-color);
+.list-item a {
+    text-transform: uppercase;
     text-decoration: none;
-
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    color: rgb(255, 255, 255);
 }
 
-.contacts-footer {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--bg-color);
+.list-item.wine {
+    background-image: repeating-linear-gradient(-45deg,
+    #998431,
+    #998431 10px,
+    #282828 10px,
+    #282828 20px);
 }
 
-.contacts-footer a {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--contact-foter);
+
+.list-item.webstudio {
+    background-image: repeating-linear-gradient(-45deg,
+            #2196F3,
+            #2196F3 10px,
+            #757575 10px,
+            #757575 20px);
+}
+
+.list-item.barbershop {
+    background-image: repeating-linear-gradient(-45deg,
+            #FF6C00,
+            #FF6C00 10px,
+            #191C26 10px,
+            #191C26 20px);
+}
+
+.list-item.uvelirka {
+    background-image: repeating-linear-gradient(-45deg,
+            #c70b0b,
+            #c70b0b 10px,
+            #000000 10px,
+            #000000 20px);
+}
+
+.list-item.empty {
+    background-image: repeating-linear-gradient(-45deg,
+            #3d9d43,
+            #3d9d43 10px,
+            #001729 10px,
+            #001729 20px);
 }

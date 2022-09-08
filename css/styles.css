@@ -62,7 +62,7 @@ ul {
     text-align: center;
     font-size: 30px;
 
-    
+
     transition-property: opacity, transform;
     transition-duration: 250ms;
     transition-timing-function: linear;
@@ -70,7 +70,7 @@ ul {
 }
 
 .list-item:hover {
-    transform: scale(1.2) translate(0,0);
+    transform: scale(1.2) translate(0, 0);
 }
 
 
@@ -86,10 +86,10 @@ ul {
 
 .list-item.wine {
     background-image: repeating-linear-gradient(-45deg,
-    #998431,
-    #998431 10px,
-    #282828 10px,
-    #282828 20px);
+            #998431,
+            #998431 10px,
+            #282828 10px,
+            #282828 20px);
 }
 
 
@@ -115,6 +115,14 @@ ul {
             #c70b0b 10px,
             #000000 10px,
             #000000 20px);
+}
+
+.list-item.business {
+    background-image: repeating-linear-gradient(-45deg,
+            #20002e,
+            #20002e 10px,
+            #f45683 10px,
+            #f45683 20px);
 }
 
 .list-item.empty {
